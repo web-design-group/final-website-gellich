@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Montserrat', sans-serif;
+  color:white;
+
+  /* 🔥 фон как в макете */
+  background: url('fon.png') no-repeat center/cover;
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+}
+
+header img{
+  width:60px;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#ccc;
+  font-size:14px;
+}
+
+.login{
+  font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  margin-top:40px;x
+  position:relative;
+}
+
+.decor{
+  width:600px;
+  position:absolute;
+  left:40%;
+  transform:translateX(-70%);
+  top:-70px;
+}
+
+.title{
+  display:inline-block;
+  background:#dcdcdc;
+  color:#000;
+  padding:20px 80px;
+  border-radius:20px;
+
+  /* 🔥 ГОТИКА */
+  font-family:'UnifrakturCook';
+  font-size:48px;
+
+  position:relative;
+  z-index:2;
+}
+
+/* PRODUCTS */
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:40px 60px;
+
+  max-width:700px;
+  margin:120px auto;
+}
+
+/* карточка */
+
+.product{
+  display:flex;
+  flex-direction:column;
+}
+
+.product img{
+  width:100%;
+  border-radius:20px;
+}
+
+.product p{
+  margin-top:8px;
+  color:#ddd;
+}
+
+.product span{
+  font-size:14px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#dcdcdc;
+  color:#000;
+  padding:30px 40px;
+
+  display:flex;
+  justify-content:space-between;
+}
+
+.contacts{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.socials{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.socials a{
+  color:#000;
+  text-decoration:none;
+}
